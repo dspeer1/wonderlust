@@ -255,39 +255,39 @@
             <h2>Contact Us <span id="required">(*required)</span></h2>
             <form>
                 <div>
-                    <label>First Name<span>*</span></label>
+                    <label for="firstname">First Name<span>*</span></label>
                     <input id="firstname" type="text" name="firstname" required>
                 </div>
                 <div>
-                    <label>Last Name<span>*</span></label>
-                    <input>
+                    <label for="lastname">Last Name<span>*</span></label>
+                    <input id="lastname" type="text" name="lastname" required>
                 </div>
                 <div>
-                    <label>Email<span>*</span></label>
-                    <input>
+                    <label for="email">Email<span>*</span></label>
+                    <input id="email" type="email" name="email" required>
                 </div>
                 <div>
-                    <label>Phone<span>*</span></label>
-                    <input>
+                    <label for="tel">Phone<span>*</span></label>
+                    <input id="tel" type="tel" name="tel" required>
                 </div>
                 <fieldset id="preferred-contact">
                 <legend>Preferred Contact Method<span>*</span></legend>
                     <div> 
-                        <input>
+                        <input id="contact_email" type="radio" name="contact" value="email" required>
                         <label>Email</label>
                     </div>
                     <div>
-                        <input>
+                        <input id="contact_text" type="radio" name="contact" value="text" required>
                         <label>Text</label>
                     </div>
                     <div>
-                        <input>
+                        <input id="contact_phone" type="radio" name="contact" value="phone" required>
                         <label>Phone</label>
                     </div>
                 </fieldset>
                 <fieldset id="destination">
                     <legend>Destination<span>*</span></legend>
-                    <select id="select-destination">
+                    <select id="select-destination" required>
                         <option>Choose</option>
                         <option>Barcelona</option>
                         <option>Granada</option>
@@ -302,7 +302,7 @@
                 </fieldset>
                 <fieldset id="travelTime">
                     <legend>Travel Time<span>*</span></legend>
-                    <select id="select-travel-time">
+                    <select id="select-travel-time" required>
                         <option>Choose</option>
                         <option>Fall</option>
                         <option>Winter</option>
