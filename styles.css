@@ -66,6 +66,25 @@ table {
 }
 
 /* ----------------- GLOBAL STYLES (MOBILE FIRST) -----------------*/
+.skip-link {
+    position: absolute;
+    background: var(--sunset-orange);
+    color: var(--soft-white);
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    padding: 5px;
+    transition: transform 0.3s;
+    overflow: hidden;
+}
+
+.skip-link:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}
+
 * {
     box-sizing: border-box;
 }
