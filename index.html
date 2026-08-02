@@ -194,7 +194,6 @@
             </section>
             <section id="about-your-destination">
                 <h3>About Your Destination</h3>
-
                 <section>
                     <h4>Size</h4>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-ruler-2" width="100" height="100" viewBox="0 0 24 24" stroke-width="1" stroke="#1B263B" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -255,7 +254,7 @@
     <footer>
         <section id="contact-us">
             <h2>Contact Us <span id="required">(*required)</span></h2>
-            <form>
+            <form action="#" method="post">
                 <div>
                     <label for="firstname">First Name<span>*</span></label>
                     <input id="firstname" type="text" name="firstname" required>
@@ -276,20 +275,21 @@
                 <legend>Preferred Contact Method<span>*</span></legend>
                     <div> 
                         <input id="contact_email" type="radio" name="contact" value="email" required>
-                        <label>Email</label>
+                        <label for="contact_email">Email</label>
                     </div>
                     <div>
                         <input id="contact_text" type="radio" name="contact" value="text" required>
-                        <label>Text</label>
+                        <label for="contact_text">Text</label>
                     </div>
                     <div>
                         <input id="contact_phone" type="radio" name="contact" value="phone" required>
-                        <label>Phone</label>
+                        <label for="contact_phone">Phone</label>
                     </div>
                 </fieldset>
                 <fieldset id="destination">
                     <legend>Destination<span>*</span></legend>
-                    <select id="select-destination" required>
+                    <label for="select-destination">Select a City:</label>                   
+                    <select id="select-destination" name="destination">
                         <option value="">Choose</option>
                         <option value="1">Barcelona</option>
                         <option value="2">Granada</option>
@@ -304,7 +304,8 @@
                 </fieldset>
                 <fieldset id="travelTime">
                     <legend>Travel Time<span>*</span></legend>
-                    <select id="select-travel-time" required>
+                    <label for="select-travel-time">Select a Season:</label>
+                    <select id="select-travel-time" name="travel-time" required>
                         <option value="">Choose</option>
                         <option value="1">Fall</option>
                         <option value="2">Winter</option>
